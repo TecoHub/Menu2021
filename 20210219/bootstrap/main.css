@@ -1,0 +1,58 @@
+.classic {
+    
+    font-size: 20px;
+    border: none;
+    outline: none;
+	background-image: linear-gradient(to right, #3e5d79,#95c5da, #95a6af, #5b6569);
+	background-position: right bottom;
+    cursor: pointer;
+    font-family:'HG行書体';
+    font-weight: 900;
+    border-radius: 8px;
+    line-height:20px;
+} 
+
+.classic2 {
+    
+    font-size: 20px;
+    border: none;
+    outline: none;
+	background-image: linear-gradient(to right, #598234,#aebd38, rgb(223, 255, 200), #598234);
+	background-position: right bottom;
+    cursor: pointer;
+    font-family:'HG行書体';
+    font-weight: 900;
+    border-radius: 8px;
+    line-height:20px;
+} 
+
+.classic3 {
+    
+    font-size: 20px;
+    border: none;
+    outline: none;
+	background-image: linear-gradient(to right, #626d71,#cdcdc0, rgb(199, 195, 184), #626d71);
+	background-position: right bottom;
+    cursor: pointer;
+    font-family:'HG行書体';
+    font-weight: 900;
+    border-radius: 8px;
+    line-height: 20px;
+} 
+
+
+.bottomfooter {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.text-dark {
+    color: #3e5d79;
+}
+
+
+.icon-drink {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
