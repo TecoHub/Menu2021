@@ -56,9 +56,9 @@ $sql="select * from discount where active=1";
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
-
     <title>Menu</title>
+
+
 </head>  
 
 <body>
@@ -74,7 +74,7 @@ $sql="select * from discount where active=1";
        </div>   
        
        <div>
-           <form action="">
+           <form action="menu01.php">
              <select class="select_mate " name="" onchange="" onclick="return false;" id="">
                 <option value=""  >お部屋番号を選択 </option>
                 <option value="1">Select option 1</option>
@@ -83,7 +83,7 @@ $sql="select * from discount where active=1";
             </select>
             
 
-            <button class="roundedbutton">TOPへ</button>
+            <input type="button" class="roundedbutton"  value="TOPへ" />
            </form>
        </div>
 
