@@ -15,7 +15,6 @@ $sql="select * from discount where active=1";
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ja-jp">
 <head>
@@ -59,14 +58,16 @@ $sql="select * from discount where active=1";
   <div class="containerPlus2">
       
 <!--style="width:384px; height:2253px; "--->
-       <img style="width:384px;height:auto "  src="images/cutout/top-mid-menu.png" usemap="#image-map">
+       <img style="width:384px;height:auto;"  src="images/cutout/top-mid-menu.png" usemap="#image-map">
 
             <map name="image-map" style="cursor: pointer; outline:none">
 
 
-<!-------Top Menu--------->
+<!----------------------------------Top Menu------------------------------------->
                            <!--guest name and room number-->
-                           <area target="" alt="" title="" href="" coords="64,32,191,60" shape="rect" >
+                           
+
+
                            <div class="top-left-room"><p>381</p></div>
                            <div class="top-left-guest"><p>MADIH EL MEHDI</p></div>
                            
@@ -81,7 +82,7 @@ $sql="select * from discount where active=1";
 
 
 
-<!---- Mid-Top Menu ----->
+<!----------------------------------- Mid-Top Menu ------------------------------->
 
                             <!-- オリジナルボトル -->
                             <area target="" alt="" title=""  class="tablinks" onclick="openCity(event, 'menu01')" coords="128,156,3,74" shape="rect" >
@@ -107,8 +108,11 @@ $sql="select * from discount where active=1";
                             </map> 
 
 
+<!----------------------------------Menu Items--------------------------------->
+
+      <!-- オリジナルボトル -->
         <div id="menu01" class="tabcontent" >
-            <img style="width: 380px; height:1509px" src="images/cutout/Menu01.png" alt="" usemap="#m01">
+            <img style="width: 384px; height:1509px;" src="images/cutout/Menu01.png" alt="" usemap="#m01">
                         <map name="m01" style="cursor: pointer; outline:none">
                                     <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
@@ -116,85 +120,93 @@ $sql="select * from discount where active=1";
                                     <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
                         </map>
-
         </div>
 
+
+      <!-- 日本酒　。焼酎 -->
         <div id="menu02" class="tabcontent" style="display: none;">
-           <img style="width: 380px; height:1990px" src="images/cutout/Menu02.png" alt="" usemap="#m02">
+           <img style="width: 384px; height:1990px" src="images/cutout/Menu02.png" alt="" usemap="#m02">
            <map name="m02" style="cursor: pointer; outline:none">
+                                                                        <!--coords="left,down,right,up"-->
                                     <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,986,44,800" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,1460,44,1280" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,1667,44,1477" shape="rect"> 
+                                    <area target="" alt="" title="" href="" coords="340,1870,44,1680" shape="rect">
                         </map>
         </div>
         
+
+      <!--ビール　。ウイスキー　-->  
         <div id="menu03" class="tabcontent" style="display: none;">
-           <img style="width: 380px; height:1509px" src="images/cutout/Menu03.png" alt="" usemap="#m03">
+           <img style="width: 384px; height:1509px" src="images/cutout/Menu03.png" alt="" usemap="#m03">
            <map name="m03" style="cursor: pointer; outline:none">
-                                    <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,986,44,800" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,537,44,370" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,734,44,559" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,926,44,757" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,1210,44,1014" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,1458,44,1236" shape="rect">
                         </map>
 
         </div>
 
+
+      <!-- サワー　。　果実酒　-->
         <div id="menu04" class="tabcontent" style="display: none;">
-           <img style="width: 380px; height:1010px" src="images/cutout/Menu04.png" alt="" usemap="#m04">
+           <img style="width: 384px; height:1010px" src="images/cutout/Menu04.png" alt="" usemap="#m04">
            <map name="m04" style="cursor: pointer; outline:none">
-                                    <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,986,44,800" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,480,44,313" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,660,44,500" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,930,44,750" shape="rect">
                         </map>
 
         </div>
 
+
+
+      <!--ワイン-->
         <div id="menu05" class="tabcontent" style="display: none;">
-           <img style="width: 380px; height:1509px" src="images/cutout/Menu05.png" alt="" usemap="#m05">
+           <img style="width: 384px; height:1509px" src="images/cutout/Menu05.png" alt="" usemap="#m05">
            <map name="m05" style="cursor: pointer; outline:none">
-                                    <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,986,44,800" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
-                        </map>
-
+                                    <area target="" alt="" title="" href="" coords="340,586,44,380" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,796,44,605" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,1050,44,830" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,1300,44,1091" shape="rect">        
+                        </map>      
         </div>
 
+
+
+      <!--ソフトドリンク-->
         <div id="menu06" class="tabcontent" style="display: none;">
-           <img style="width: 380px; height:800px" src="images/cutout/Menu06.png" alt="" usemap="#m06">
+           <img style="width: 384px; height:800px" src="images/cutout/Menu06.png" alt="" usemap="#m06">
            <map name="m06" style="cursor: pointer; outline:none">
-                                    <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,986,44,800" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,513,44,340" shape="rect">
+                                    <area target="" alt="" title="" href="" coords="340,710,44,535" shape="rect">
                         </map>
-
         </div>
+
+
         
 
 
 
  <!---------Drinks-------->               
 
-                            <!-- 日本酒 -->
+                            <!-- 日本酒 
                             <area target="" alt="" title="" href="" coords="340,814,44,589" shape="rect">
                             <area target="" alt="" title="" href="" coords="340,1022,44,823" shape="rect">
                             <area target="" alt="" title="" href="" coords="340,1232,44,1033" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,1440,44,1241" shape="rect">
+                            <area target="" alt="" title="" href="" coords="340,1440,44,1241" shape="rect">-->
 
-                            <!-- 焼酎 -->
+                            <!-- 焼酎 
                             <area target="" alt="" title="" href="" coords="340,1707,44,1523" shape="rect">
                             <area target="" alt="" title="" href="" coords="340,1914,44,1717" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,2123,44,1926" shape="rect">
+                            <area target="" alt="" title="" href="" coords="340,2123,44,1926" shape="rect">-->
 
-
+<!--here we go and saturdays and -->
            
 
   </div>

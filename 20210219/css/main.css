@@ -16,6 +16,16 @@ body {
 
 /***********************************************/
 
+area {
+    outline: none;
+}
+
+img {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
 .center {
     display: block;
     margin-left: auto;
@@ -26,16 +36,17 @@ body {
 /* guest name */
 .top-left-guest {
     position: absolute;
-    top: 24px;
-    left: 90px;
+    top: 26px;
+    left: 82px;
     font-size: 12px;
   }
 
 /* room number */
 .top-left-room {
-position: absolute;
-top: -1px;
-left: 140px;
+    position: absolute;
+    top: 6px;
+    left: 135px;
+    font-size: 12px;
 }
 
 
@@ -51,6 +62,7 @@ left: 140px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 0;
     width: 384px;   
 }
 

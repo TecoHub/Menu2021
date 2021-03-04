@@ -20,7 +20,7 @@ $sql="select * from discount where active=1";
 <html lang="ja-jp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     
     <meta name="theme-color" content="#c9ad86">
     <meta name="msapplication-navbutton-color" content="#c9ad86">
@@ -34,21 +34,46 @@ $sql="select * from discount where active=1";
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Latest compiled and minified CSS -->
+          <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <!-- jQuery library -->
+          <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- Popper JS -->
+          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+    <!-- Latest compiled JavaScript -->
+          <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
     <title>Menu</title>
+
+    <script>
+    
+    $(".yellow").on("click", function(e){
+  e.preventDefault();
+  alert('test');
+});
+
+</script>
+
 </head>  
 
-<body style="background-color: #e3d3bf;">
+<body>
   <div class="containerPlus2">
       
 <!--style="width:384px; height:2253px; "--->
-       <img style="width:384px;"  src="images/cutout/topmid.png" usemap="#image-map">
+       <img style="width:384px;height:auto "  src="images/cutout/top-mid-menu.png" usemap="#image-map">
 
             <map name="image-map" style="cursor: pointer; outline:none">
-                <!--Top Menu-->
+
+
+<!----------------------------------Top Menu------------------------------------->
+                           <!--guest name and room number-->
+                           
+
+
+                           <div class="top-left-room"><p>381</p></div>
+                           <div class="top-left-guest"><p>MADIH EL MEHDI</p></div>
+                           
                            <!--Change User-->
-                           <area class="guestname" target="" alt="" title="" href="login.php" coords="220,10,281,62" shape="rect">
+                           <area target="" alt="" title="" href="login.php" coords="220,10,281,62" shape="rect">
 
                            <!--Home-->
                            <area target="" alt="" title="" href="menu01.php" coords="285,10,329,62" shape="rect">
@@ -58,38 +83,43 @@ $sql="select * from discount where active=1";
 
 
 
-                <!-- Mid-Top Menu -->
+<!----------------------------------- Mid-Top Menu ------------------------------->
 
                             <!-- オリジナルボトル -->
-                            <area target="" alt="" title="" href="menu01.php" coords="128,156,3,74" shape="rect">
+                            <area target="" alt="" title=""  class="tablinks" onclick="openCity(event, 'menu01')" coords="128,156,3,74" shape="rect" >
+
 　　　　　　　　　　　　　　　　<!-- 日本酒　。焼酎 -->
-                            <area target="" alt="" title="" href="menu02.php" coords="255,156,130,74" shape="rect">
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu02')" coords="255,156,130,74" shape="rect">
 
                             <!--ビール　。ウイスキー　-->
-                            <area target="" alt="" title="" href="" coords="383,156,258,74" shape="rect">
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu03')" coords="383,156,258,74" shape="rect">
 
                           
 
 　　　　　　　　　　　　　　　<!-- サワー　。　果実酒　-->
-                            <area target="" alt="" title="" href="" coords="128,240,3,158" shape="rect">
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu04')" coords="128,240,3,158" shape="rect">
 
                             <!--ワイン-->
-                            <area target="" alt="" title="" href="" coords="255,240,130,158" shape="rect">
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu05')" coords="255,240,130,158" shape="rect">
 
                             <!--ソフトドリンク-->
-                            <area target="" alt="" title="" href="" coords="383,240,258,158" shape="rect">
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu06')" coords="383,240,258,158" shape="rect">
 
-            </map> 
+
+                            </map> 
 
 
   </div>
 
+  <!-------------------------------------------------->
 
 
+        <!-- オリジナルボトル -->
+        <div id="menu01" class="tabcontent" >
+            <img style="width: 380px; height:auto" src="images/cutout/history.png" alt="" usemap="#m01">
+        </div>
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>    
-</html>   
+  <script src="js/main.js"></script>
+</body>   
+</html>
+    
