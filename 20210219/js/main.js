@@ -329,9 +329,7 @@ function gotonextview() {
 }
 
 ////////////////////////////////////////////////////////////////
-// every stay includes section // all pages
-
-
+/****** tabs ******/
 
 function openCity(evt, service) {
   var i, tabcontent, tablinks;
@@ -347,7 +345,7 @@ function openCity(evt, service) {
   evt.currentTarget.className += " active";
 }
 
-
+///////////////////////////////////////////////////////////////
 
 
 

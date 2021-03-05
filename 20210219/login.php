@@ -77,11 +77,12 @@ $sql="select * from discount where active=1";
            <form action="menu01.php">
              <select class="select_mate " name="" onchange="" onclick="return false;" id="">
                 <option value=""  >お部屋番号を選択 </option>
-                <option value="1">Select option 1</option>
-                <option value="2" >Select option 2</option>
-                <option value="3">Select option 3</option>
+                <option value="1"> option 1</option>
+                <option value="2"> option 2</option>
+                <option value="3"> option 3</option>
             </select>
             
+            <!---部屋番号を入力してください。--->
 
             <input type="button" class="roundedbutton"  value="TOPへ" />
            </form>

@@ -174,27 +174,27 @@ function callcart(id,cd1,cd2) {
             <div class="blackboard">
                         <a class="button1 button1-color" href="orderhistory.php">注文済一覧 <img style="height: 24px; width:21px" src="images/drinks-bottles.png" alt=""></a>
                         <button class="button2 button1-color" onclick="location.href='checkout_cart.php';"> <img style="height: 24px; width:21px" src="images/shopping-cartm.png" alt=""> カート (<span class="total-count"></span>)  </button> <br>
-                    <div class="container">
+                            <div class="container">
 
-                                <div class="drink-type">
-                                    <img class="logo" src="images/4564.png" alt="">
-                                    <h3> <img class="drinkmenupic" src="images/drink-menu3.png" alt=""> </h3>
-                                    
-                                    <?php
-                                        $s=0;
-                                    for($t=0;$t<sizeof($colarr);$t++){
-                                        $s=$s+1;
-                                    ?>
-                                    
-                                        <button id="english<?php echo $s;?>" class="classic" value="<?php echo $colarr[$t]['category'];?>" href="#Menu<?php echo $s;?>" onclick="callmenu('<?php echo $colarr[$t]['category'];?>');showcart(); gotonextview();"> <span><?php echo $colarr[$t]['category'];?></span></button>
+                                        <div class="drink-type">
+                                            <img class="logo" src="images/4564.png" alt="">
+                                            <h3> <img class="drinkmenupic" src="images/drink-menu3.png" alt=""> </h3>
+                                            
+                                            <?php
+                                                $s=0;
+                                            for($t=0;$t<sizeof($colarr);$t++){
+                                                $s=$s+1;
+                                            ?>
+                                            
+                                                <button id="english<?php echo $s;?>" class="classic" value="<?php echo $colarr[$t]['category'];?>" href="#Menu<?php echo $s;?>" onclick="callmenu('<?php echo $colarr[$t]['category'];?>');showcart(); gotonextview();"> <span><?php echo $colarr[$t]['category'];?></span></button>
+                                                
+                                                <?php
+                                            }
+                                                ?>
+                                                
+                                        </div>
                                         
-                                        <?php
-                                    }
-                                        ?>
-                                        
-                                </div>
-                                
-                    </div>    
+                            </div>    
             </div>
 
                                 <div class="bottomfooter footerespo">

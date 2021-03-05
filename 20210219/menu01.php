@@ -33,41 +33,31 @@ $sql="select * from discount where active=1";
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
-          <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
     <!-- jQuery library -->
-          <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <!-- Popper JS -->
-          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
     <!-- Latest compiled JavaScript -->
-          <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
     <title>Menu</title>
 
-    <script>
-    
-    $(".yellow").on("click", function(e){
-  e.preventDefault();
-  alert('test');
-});
 
-</script>
 
 </head>  
 
-<body>
+<body style="background-color: #e3d3bf;">
   <div class="containerPlus2">
-      
-<!--style="width:384px; height:2253px; "--->
        <img style="width:384px;height:auto;"  src="images/cutout/top-mid-menu.png" usemap="#image-map">
 
-            <map name="image-map" style="cursor: pointer; outline:none">
 
-
+            <map name="image-map" style="cursor: pointer; ">
 <!----------------------------------Top Menu------------------------------------->
+
                            <!--guest name and room number-->
-                           
-
-
                            <div class="top-left-room"><p>381</p></div>
                            <div class="top-left-guest"><p>MADIH EL MEHDI</p></div>
                            
@@ -80,12 +70,10 @@ $sql="select * from discount where active=1";
                            <!--History-->
                            <area target="" alt="" title="" href="order01.php" coords="334,10,378,62" shape="rect">
 
-
-
 <!----------------------------------- Mid-Top Menu ------------------------------->
 
                             <!-- オリジナルボトル -->
-                            <area target="" alt="" title=""  class="tablinks" onclick="openCity(event, 'menu01')" coords="128,156,3,74" shape="rect" >
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu01')" coords="128,156,3,74" shape="rect" >
 
 　　　　　　　　　　　　　　　　<!-- 日本酒　。焼酎 -->
                             <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu02')" coords="255,156,130,74" shape="rect">
@@ -105,17 +93,58 @@ $sql="select * from discount where active=1";
                             <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu06')" coords="383,240,258,158" shape="rect">
 
 
-                            </map> 
+           </map> 
+
+<!-- Button trigger modal -->
 
 
+<!-- Modal 1-->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #e3d3bf;">
+      <div class="modal-header">
+        <h5 class="modal-title">1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+            <div class="modal-body">
+              Body
+            </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2-->
+<div class="modal fade" id="modelId1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+            <div class="modal-body">
+              Body
+            </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!----------------------------------Menu Items--------------------------------->
 
       <!-- オリジナルボトル -->
         <div id="menu01" class="tabcontent" >
-            <img style="width: 384px; height:1509px;" src="images/cutout/Menu01.png" alt="" usemap="#m01">
-                        <map name="m01" style="cursor: pointer; outline:none">
-                                    <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
-                                    <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
+            <img style="width: 384px; height:auto;" src="images/cutout/Menu01.png" alt="" usemap="#m01">
+                        <map name="m01" style="cursor: pointer;">
+                                    <area target="" alt="" title="" href="" data-toggle="modal" data-target="#modelId" coords="340,570,44,380" shape="rect">
+                                    <area target="" alt="" title="" href="" data-toggle="modal" data-target="#modelId1"coords="340,778,44,589" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,986,44,800" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,1190,44,1001" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,1410,44,1210" shape="rect">
@@ -125,8 +154,8 @@ $sql="select * from discount where active=1";
 
       <!-- 日本酒　。焼酎 -->
         <div id="menu02" class="tabcontent" style="display: none;">
-           <img style="width: 384px; height:1990px" src="images/cutout/Menu02.png" alt="" usemap="#m02">
-           <map name="m02" style="cursor: pointer; outline:none">
+           <img style="width: 384px; height:auto;" src="images/cutout/Menu02.png" alt="" usemap="#m02">
+           <map name="m02" style="cursor: pointer; ">
                                                                         <!--coords="left,down,right,up"-->
                                     <area target="" alt="" title="" href="" coords="340,570,44,380" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,778,44,589" shape="rect">
@@ -141,8 +170,8 @@ $sql="select * from discount where active=1";
 
       <!--ビール　。ウイスキー　-->  
         <div id="menu03" class="tabcontent" style="display: none;">
-           <img style="width: 384px; height:1509px" src="images/cutout/Menu03.png" alt="" usemap="#m03">
-           <map name="m03" style="cursor: pointer; outline:none">
+           <img style="width: 384px; height:auto" src="images/cutout/Menu03.png" alt="" usemap="#m03">
+           <map name="m03" style="cursor: pointer; ">
                                     <area target="" alt="" title="" href="" coords="340,537,44,370" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,734,44,559" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,926,44,757" shape="rect">
@@ -155,8 +184,8 @@ $sql="select * from discount where active=1";
 
       <!-- サワー　。　果実酒　-->
         <div id="menu04" class="tabcontent" style="display: none;">
-           <img style="width: 384px; height:1010px" src="images/cutout/Menu04.png" alt="" usemap="#m04">
-           <map name="m04" style="cursor: pointer; outline:none">
+           <img style="width: 384px; height:auto" src="images/cutout/Menu04.png" alt="" usemap="#m04">
+           <map name="m04" style="cursor: pointer; ">
                                     <area target="" alt="" title="" href="" coords="340,480,44,313" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,660,44,500" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,930,44,750" shape="rect">
@@ -165,11 +194,10 @@ $sql="select * from discount where active=1";
         </div>
 
 
-
       <!--ワイン-->
         <div id="menu05" class="tabcontent" style="display: none;">
-           <img style="width: 384px; height:1509px" src="images/cutout/Menu05.png" alt="" usemap="#m05">
-           <map name="m05" style="cursor: pointer; outline:none">
+           <img style="width: 384px; height:auto" src="images/cutout/Menu05.png" alt="" usemap="#m05">
+           <map name="m05" style="cursor: pointer; ">
                                     <area target="" alt="" title="" href="" coords="340,586,44,380" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,796,44,605" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,1050,44,830" shape="rect">
@@ -178,39 +206,17 @@ $sql="select * from discount where active=1";
         </div>
 
 
-
       <!--ソフトドリンク-->
         <div id="menu06" class="tabcontent" style="display: none;">
-           <img style="width: 384px; height:800px" src="images/cutout/Menu06.png" alt="" usemap="#m06">
-           <map name="m06" style="cursor: pointer; outline:none">
+           <img style="width: 384px; height:auto" src="images/cutout/Menu06.png" alt="" usemap="#m06">
+           <map name="m06" style="cursor: pointer; ">
                                     <area target="" alt="" title="" href="" coords="340,513,44,340" shape="rect">
                                     <area target="" alt="" title="" href="" coords="340,710,44,535" shape="rect">
                         </map>
         </div>
 
-
-        
-
-
-
- <!---------Drinks-------->               
-
-                            <!-- 日本酒 
-                            <area target="" alt="" title="" href="" coords="340,814,44,589" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,1022,44,823" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,1232,44,1033" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,1440,44,1241" shape="rect">-->
-
-                            <!-- 焼酎 
-                            <area target="" alt="" title="" href="" coords="340,1707,44,1523" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,1914,44,1717" shape="rect">
-                            <area target="" alt="" title="" href="" coords="340,2123,44,1926" shape="rect">-->
-
-<!--here we go and saturdays and -->
-           
-
   </div>
-  <script src="js/main.js"></script>
+         <script src="js/main.js"></script>
 </body>   
 </html>
     

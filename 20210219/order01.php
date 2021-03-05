@@ -44,15 +44,6 @@ $sql="select * from discount where active=1";
           <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
     <title>Menu</title>
 
-    <script>
-    
-    $(".yellow").on("click", function(e){
-  e.preventDefault();
-  alert('test');
-});
-
-</script>
-
 </head>  
 
 <body>
@@ -61,7 +52,7 @@ $sql="select * from discount where active=1";
 <!--style="width:384px; height:2253px; "--->
        <img style="width:384px;height:auto "  src="images/cutout/top-mid-menu.png" usemap="#image-map">
 
-            <map name="image-map" style="cursor: pointer; outline:none">
+            <map name="image-map" style="cursor: pointer;">
 
 
 <!----------------------------------Top Menu------------------------------------->
@@ -86,7 +77,7 @@ $sql="select * from discount where active=1";
 <!----------------------------------- Mid-Top Menu ------------------------------->
 
                             <!-- オリジナルボトル -->
-                            <area target="" alt="" title=""  class="tablinks" onclick="openCity(event, 'menu01')" coords="128,156,3,74" shape="rect" >
+                            <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu01')" coords="128,156,3,74" shape="rect" >
 
 　　　　　　　　　　　　　　　　<!-- 日本酒　。焼酎 -->
                             <area target="" alt="" title="" class="tablinks" onclick="openCity(event, 'menu02')" coords="255,156,130,74" shape="rect">
