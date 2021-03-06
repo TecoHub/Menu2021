@@ -95,9 +95,6 @@ $sql="select * from discount where active=1";
 
            </map> 
 
-<!-- Button trigger modal -->
-
-
 <!-- Modal 1-->
 <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
   <div class="modal-dialog" role="document">

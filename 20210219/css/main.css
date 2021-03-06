@@ -37,16 +37,16 @@ img {
 /* guest name */
 .top-left-guest {
     position: absolute;
-    top: 26px;
-    left: 82px;
+    top: 38px;
+    left: 79px;
     font-size: 12px;
   }
 
 /* room number */
 .top-left-room {
     position: absolute;
-    top: 6px;
-    left: 135px;
+    top: 17px;
+    left: 145px;
     font-size: 12px;
 }
 
