@@ -1,1 +1,0 @@
-- Test12.php is to check if data is being sent after an order is placed.
